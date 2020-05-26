@@ -1,5 +1,5 @@
-# Given An Arrays A with N-1 elements having values from 1 to N with one element missing.?
- <i class="fa fa-sliders" />Write a programe to find out the missing number.  */
+/* Given An Arrays A with N-1 elements having values from 1 to N with one element missing.?
+ Write a programe to find out the missing number.  */
  
 
 
