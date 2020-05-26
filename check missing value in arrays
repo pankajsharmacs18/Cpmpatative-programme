@@ -1,0 +1,66 @@
+# Given An Arrays A with N-1 elements having values from 1 to N with one element missing.?
+ <i class="fa fa-sliders" />Write a programe to find out the missing number.  */
+ 
+
+
+package compatativePractice;
+
+import java.util.Scanner;
+
+class ArraysImple
+{
+    Scanner sc=new Scanner(System.in);
+    int arr[];
+    ArraysImple(int size)
+    {
+    arr=new int[size];
+    }
+    public void insertValue()
+    {
+        System.out.println("enter value"+(arr.length-1)+" in array ");
+        for (int i = 0; i <arr.length ; i++)
+        {
+         arr[i]=sc.nextInt();
+        }
+    }
+    public void display()
+    {
+        System.out.println("input araays is \n ");
+        for (int i = 0; i <arr.length ; i++)
+        {
+            System.out.print(arr[i]+" ");
+        }
+    }
+    public void checkNullValue()
+    {
+        int tempSum=0;
+        int sum=((arr.length-1)*(arr.length))/2;
+        for (int i = 0; i < arr.length; i++)
+        {
+            tempSum=tempSum+i;
+        }
+        if (tempSum==sum)
+        {
+            System.out.println("NOT Missing any value  : ");
+            return;
+        }
+        else
+
+            {
+                System.out.println("missing value is  :"+(sum-tempSum));
+            }
+    }
+}
+public class CompMain
+{
+    public static void main(String... PankajSharma)
+    {
+        Scanner sc=new Scanner(System.in);
+        System.out.println("Enter size of arrays " );
+        ArraysImple onj=new ArraysImple(sc.nextInt());
+        onj.insertValue();
+        onj.display();
+        onj.checkNullValue();
+        System.out.println("Pankaj Sharma  :");
+    }
+}
