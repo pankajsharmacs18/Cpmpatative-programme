@@ -1,0 +1,77 @@
+#include <stdio.h>
+
+
+ 
+
+int main(){
+
+
+ 
+
+    int t;
+
+    scanf("%d",&t);
+
+    for(int x=0;x<t;x++){
+
+int greencost,purplecost;
+
+        scanf("%d %d",&greencost,&purplecost);
+
+        int n;
+
+        scanf("%d",&n);
+
+        if(n>=1&&n<=10){
+
+int first=0,second=0;
+
+             for(int i=0;i<n;i++){
+
+                 int prob1,prob2;
+
+                 scanf("%d %d",&prob1,&prob2);
+
+                 first=prob1*greencost +prob2*purplecost+first;
+
+                 second=prob1*purplecost + prob2*greencost+second;
+
+
+ 
+
+             }
+
+             if(first<second)
+
+                 printf("%d\n",first);
+
+            else
+
+                 printf("%d\n",second);
+
+            
+
+            
+
+        }else
+
+            printf("invalid");
+
+        
+
+    
+
+        
+
+
+ 
+
+    }
+
+
+
+ 
+
+return 0;
+
+}
